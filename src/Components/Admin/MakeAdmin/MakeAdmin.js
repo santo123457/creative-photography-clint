@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     const[loggedInUser , setLoggedInUser]= useContext(UserContext);
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-            fetch('https://murmuring-journey-43171.herokuapp.com/addAdmin',{
+            fetch('http://localhost:4000/addAdmin',{
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(data)
