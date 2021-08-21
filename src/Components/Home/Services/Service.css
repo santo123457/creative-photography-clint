@@ -1,0 +1,15 @@
+@media screen and (max-width: 992px) {
+    .service-row{
+        margin-left:70px;
+        
+    }
+  }
+  .MuiCard-root {
+    overflow: initial!important;
+}
+.gap{
+  column-gap: 10px; 
+}
+.gap>div{
+flex-basis: calc(25% - 10px);
+}
