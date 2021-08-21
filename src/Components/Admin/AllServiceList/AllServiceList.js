@@ -8,7 +8,7 @@ const AllServiceList = () => {
     const[loggedInUser , setLoggedInUser]= useContext(UserContext);
     const [services,setServices] = useState([]);
     useEffect(()=>{
-        fetch('https://murmuring-journey-43171.herokuapp.com/allOrders')
+        fetch('http://localhost:4000/allOrders')
         .then(res=> res.json())
         .then(data =>setServices(data))
     },[])
